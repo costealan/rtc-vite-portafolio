@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./Montserrat-Regular.ttf);
+}
+:root{
+  font-family: Montserrat;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(203, 203, 203);
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > button{
+  margin: 10px;
+  border: none;
+  width: 200px;
+  height: 70px;
+  border-radius: 15px;
+  font-size: larger;
+}
+header > button:hover{
+  cursor: pointer;
+  background-color: black;
+}
