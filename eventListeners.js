@@ -1,5 +1,5 @@
 import { homeBtn, projectsBtn, experienceBtn } from "./domElements";
-import { renderHomeTags } from "./renderTags";
+import { renderHomeTags, renderexperienceTags } from "./renderTags";
 export const homeBtnEventListener = () => {
   homeBtn.addEventListener('click', function () {
     contentContainer.innerHTML = '';
@@ -8,7 +8,7 @@ export const homeBtnEventListener = () => {
 }
 projectsBtn.addEventListener('click', function () {
   contentContainer.innerHTML = '';
-
+  renderexperienceTags();
 })
 experienceBtn.addEventListener('click', function () {
   contentContainer.innerHTML = '';

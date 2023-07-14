@@ -14,7 +14,21 @@ export const homeTemplateTags = () => {
 `
 };
 export const experienceTemplateTags = () => {
-
+  return `
+ <section class="experience">
+ <div class="jobContainer">
+   <img src="" alt="logo empresa">
+   <h3>Nombre de la Empresa</h3>
+   <h4>fechas</h4>
+   <ul>
+     <li>Listado de responsabilidades</li>
+     <li></li>
+     <li></li>
+   </ul>
+   <a href="">web del trabajo</a>
+ </div>
+</section>
+ `
 };
 export const projectsTemplateTags = () => {
 
