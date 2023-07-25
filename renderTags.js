@@ -5,8 +5,9 @@ export const renderHomeTags = () => {
   const homeTags = homeTemplateTags();
   contentContainer.innerHTML += homeTags;
 }
-export const renderexperienceTags = () => {
+export const renderExperienceTags = () => {
   const experienceTags = experienceTemplateTags();
   contentContainer.innerHTML += experienceTags;
 }
+
 

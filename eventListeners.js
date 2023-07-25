@@ -1,5 +1,6 @@
 import { homeBtn, projectsBtn, experienceBtn } from "./domElements";
-import { renderHomeTags, renderexperienceTags } from "./renderTags";
+import { renderHomeTags, renderExperienceTags } from "./renderTags";
+
 export const homeBtnEventListener = () => {
   homeBtn.addEventListener('click', function () {
     contentContainer.innerHTML = '';
@@ -8,9 +9,11 @@ export const homeBtnEventListener = () => {
 }
 projectsBtn.addEventListener('click', function () {
   contentContainer.innerHTML = '';
-  renderexperienceTags();
+  re
 })
-experienceBtn.addEventListener('click', function () {
-  contentContainer.innerHTML = '';
-
-})
+export const experienceBtnEventListener = () => {
+  experienceBtn.addEventListener('click', function () {
+    contentContainer.innerHTML = '';
+    renderExperienceTags();
+  })
+}

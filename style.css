@@ -52,6 +52,15 @@ header > button:hover{
   border: 1px solid black;
 
 }
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projectContainer > p{
+  width: 200px;
+}
 footer{
   display: flex;
   align-items: center;

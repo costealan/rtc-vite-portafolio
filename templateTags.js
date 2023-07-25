@@ -1,6 +1,5 @@
 export const homeTemplateTags = () => {
   return `
-<section class="homePage">
 <img src="" alt="foto mia">
 <h2>Alan Coste</h2>
 <h3>Programación fullstack</h3>
@@ -10,12 +9,10 @@ export const homeTemplateTags = () => {
   <img src="" alt="instagram">
   <img src="" alt="linkedin">
 </div>
-</section>
 `
 };
 export const experienceTemplateTags = () => {
   return `
- <section class="experience">
  <div class="jobContainer">
    <img src="" alt="logo empresa">
    <h3>Nombre de la Empresa</h3>
@@ -27,9 +24,18 @@ export const experienceTemplateTags = () => {
    </ul>
    <a href="">web del trabajo</a>
  </div>
-</section>
  `
 };
 export const projectsTemplateTags = () => {
-
+  return `
+<div class="projectContainer">
+  <img src="" alt="imagen proyecto">
+  <h3>Titulo proyecto</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque, officiis natus accusantium iste
+    tenetur
+    ad inventore numquam suscipit culpa. Temporibus, laudantium? Sapiente reprehenderit consequatur voluptate
+    similique acc
+    usantium veniam perspiciatis.</p>
+</div>
+`
 }
