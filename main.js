@@ -1,10 +1,11 @@
 import './style.css'
-import { homeBtnEventListener, experienceBtnEventListener } from './eventListeners'
+import { homeBtnEventListener, experienceBtnEventListener, projectsBtnEventListener } from './eventListeners'
 import { renderHomeTags } from './renderTags';
 
 renderHomeTags()
 homeBtnEventListener();
-experienceBtnEventListener()
+experienceBtnEventListener();
+projectsBtnEventListener();
 
 //problema de donde se va a hacer el render
 //tengo los tags en el html, pero se elimina cada vez que pico el boton
