@@ -18,15 +18,15 @@ export const homeTemplateTags = () => {
 export const experienceTemplateTags = () => {
   return `
  <div class="jobContainer">
-   <img src="${img}" alt="${empresa}">
-   <h3>${empresa}</h3>
-   <h4>${fechas}</h4>
+   <img src="" alt="empresa">
+   <h3>empresa</h3>
+   <h4></h4>
    <ul>
-     <li>${responsabilidad1}</li>
-     <li>${responsabilidad2}</li>
-     <li>${responsabilidad3}</li>
+     <li></li>
+     <li></li>
+     <li></li>
    </ul>
-   <a href="${link}">Sitio oficial de ${empresa}</a>
+   <a href="">Sitio oficial de</a>
  </div>
  `
 };
@@ -36,7 +36,7 @@ export const projectsTemplateTags = (project) => {
   return `
 <div class="projectContainer">
   <img src="" alt="imagen del proyecto">
-  <h3>Nombre del proyect</h3>
+  <h3>${project.proyecto}</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque, officiis natus accusantium iste
     tenetur
     ad inventore numquam suscipit culpa. Temporibus, laudantium? Sapiente reprehenderit consequatur voluptate
@@ -46,4 +46,4 @@ export const projectsTemplateTags = (project) => {
 `
 }
 
-export const renderAllProjects = () => projects.forEach(project => projectsTemplateTags(project))
+
