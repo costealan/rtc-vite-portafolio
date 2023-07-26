@@ -14,18 +14,7 @@ const createExperience = (img, empresa, fechas, responsabilidad1, responsabilida
   experiences.push(experience)
 }
 
-//const products = [];
-// const createProduct = (name, price, stars, reviews, seller, image) => {
-//   let product = {
-//     name: name,
-//     price: price,
-//     stars: stars,
-//     reviews: reviews,
-//     seller: seller,
-//     image: image
-//   };
-//   products.push(product);
-// };
+
 // const listOfProducts = () => {
 //   let macBookAir12 = createProduct('Macbook Air', 1000, 4, 100, 'Apple', 'https://thumb.pccomponentes.com/w-530-530/articles/1039/10392488/1935-apple-macbook-air-apple-m2-8gb-256gb-ssd-gpu-octa-core-136-gris-espacial.jpg')
 //   let macBookPro = createProduct('Macbook Pro', 1500, 4, 3, 'Apple', 'https://thumb.pccomponentes.com/w-530-530/articles/33/335377/1575-apple-macbook-air-apple-m1-8gb-256gb-ssd-gpu-hepta-core-133-gris-espacial.jpg')

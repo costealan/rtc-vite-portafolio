@@ -1,3 +1,5 @@
+import { projects } from "./projectsFactory";
+
 export const homeTemplateTags = () => {
   return `
 <img src="" alt="foto mia">
@@ -11,26 +13,30 @@ export const homeTemplateTags = () => {
 </div>
 `
 };
+
+// const createExperience = (img, empresa, fechas, responsabilidad1, responsabilidad2, responsabilidad3, link)
 export const experienceTemplateTags = () => {
   return `
  <div class="jobContainer">
-   <img src="" alt="logo empresa">
-   <h3>Nombre de la Empresa</h3>
-   <h4>fechas</h4>
+   <img src="${img}" alt="${empresa}">
+   <h3>${empresa}</h3>
+   <h4>${fechas}</h4>
    <ul>
-     <li>Listado de responsabilidades</li>
-     <li></li>
-     <li></li>
+     <li>${responsabilidad1}</li>
+     <li>${responsabilidad2}</li>
+     <li>${responsabilidad3}</li>
    </ul>
-   <a href="">web del trabajo</a>
+   <a href="${link}">Sitio oficial de ${empresa}</a>
  </div>
  `
 };
-export const projectsTemplateTags = () => {
+
+// const createProject = (img, proyecto, parrafo)
+export const projectsTemplateTags = (project) => {
   return `
 <div class="projectContainer">
-  <img src="" alt="imagen proyecto">
-  <h3>Titulo proyecto</h3>
+  <img src="" alt="imagen del proyecto">
+  <h3>Nombre del proyect</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque, officiis natus accusantium iste
     tenetur
     ad inventore numquam suscipit culpa. Temporibus, laudantium? Sapiente reprehenderit consequatur voluptate
@@ -39,3 +45,5 @@ export const projectsTemplateTags = () => {
 </div>
 `
 }
+
+export const renderAllProjects = () => projects.forEach(project => projectsTemplateTags(project))

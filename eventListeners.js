@@ -1,6 +1,7 @@
 import { homeBtn, projectsBtn, experienceBtn, contentContainer } from "./domElements";
 import { renderHomeTags, renderExperienceTags, renderProjectsTemplateTags } from "./renderTags";
 
+
 export const homeBtnEventListener = () => {
   homeBtn.addEventListener('click', function () {
     contentContainer.innerHTML = '';

@@ -1,5 +1,6 @@
 import { homeTemplateTags, experienceTemplateTags, projectsTemplateTags } from "./templateTags";
 import { contentContainer } from "./domElements";
+import { projects } from "./projectsFactory";
 
 export const renderHomeTags = () => {
   const homeTags = homeTemplateTags();
@@ -7,9 +8,12 @@ export const renderHomeTags = () => {
   contentContainer.innerHTML += homeTags;
 }
 export const renderProjectsTemplateTags = () => {
-  const projectTags = projectsTemplateTags();
   contentContainer.classList.add('projects');
-  contentContainer.innerHTML += projectTags
+  projects.forEach(project => {
+    let projectTags = projectsTemplateTags()
+    contentContainer.innerHTML += projectTags
+  })
+
 }
 export const renderExperienceTags = () => {
   const experienceTags = experienceTemplateTags();
