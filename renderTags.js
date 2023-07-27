@@ -12,7 +12,6 @@ export const renderProjectsTemplateTags = () => {
   contentContainer.classList.add('projects');
   projects.forEach(project => {
     let projectTags = projectsTemplateTags(project)
-    console.log(project.proyecto)
     contentContainer.innerHTML += projectTags
   })
 
@@ -23,7 +22,6 @@ export const renderExperienceTags = () => {
     let experienceTags = experienceTemplateTags();
     contentContainer.innerHTML += experienceTags;
   })
-
 }
 
 

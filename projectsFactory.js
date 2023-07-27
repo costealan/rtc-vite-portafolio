@@ -3,7 +3,7 @@ import { renderProjectsTemplateTags } from "./renderTags";
 
 export const projects = [];
 
-const createProject = (img, proyecto) => {
+const createProject = (proyecto) => {
   let project = {
     proyecto: proyecto,
     // parrafo : parrafo,

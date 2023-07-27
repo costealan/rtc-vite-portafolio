@@ -35,7 +35,7 @@ export const experienceTemplateTags = () => {
 export const projectsTemplateTags = (project) => {
   return `
 <div class="projectContainer">
-  <img src="" alt="imagen del proyecto">
+  <img src="" alt="${project.proyecto}">
   <h3>${project.proyecto}</h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque, officiis natus accusantium iste
     tenetur
