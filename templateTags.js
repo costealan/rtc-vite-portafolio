@@ -22,9 +22,9 @@ export const experienceTemplateTags = () => {
    <h4>Puesto</h4>
    </div>
    <ul>
-     <li></li>
-     <li></li>
-     <li></li>
+     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
    </ul>
  </div>
  `
@@ -33,8 +33,8 @@ export const experienceTemplateTags = () => {
 // const createProject = (img, proyecto, parrafo)
 export const projectsTemplateTags = (project) => {
   return `
-<div class="projectContainer">
-  <img src="./hamburguesa.jpg" alt="${project.proyecto}">
+<div class="${project.layout}">
+  <img src="${project.img}" alt="${project.proyecto}">
   <h1>${project.proyecto}</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque, officiis natus accusantium iste
     tenetur

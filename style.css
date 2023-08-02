@@ -92,21 +92,34 @@ header > button:hover{
 .jobContainer > img{
   width: 100px;
   height: 100px;
+  margin-right: 100px;
   background-color: var(--neutralGrey);
   border-radius: 100px;
 }
 .jobContainer > div{
+  width: 100px;
   display: flex;
   flex-direction: column;
 }
 .jobContainer h4{
   color: var(--pinkLight);
+  font-family: Futura-Book;
+  font-size: 20px;
 }
 .jobContainer a{
+  font-family: Futura-Book;
+  font-size: 20px;
   color: var(--pinkLight);
   border-style: none;
+  text-decoration: none;
+}
+.jobContainer a:hover{
+  color: var(--pinkHighlight);
 }
 .jobContainer > ul{
+  font-family: Eb_Garamond;
+  font-size: 15px;
+  list-style: none;
   color: var(--pinkLight);
 }
 .projects{
@@ -164,4 +177,5 @@ footer{
   align-items: center;
   justify-content: center;
   margin-top: auto;
+  color: var(--pinkLight);
 }
