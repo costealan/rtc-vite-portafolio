@@ -11,6 +11,7 @@ export const homeBtnEventListener = () => {
 export const projectsBtnEventListener = () => {
   projectsBtn.addEventListener('click', function () {
     contentContainer.innerHTML = '';
+    
     renderProjectsTemplateTags();
   })
 };

@@ -4,9 +4,7 @@ export const homeTemplateTags = () => {
   return `
 <img src="" alt="foto mia">
 <h2>Alan Coste</h2>
-<h3>Programación fullstack</h3>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ut eaque rem dolor magni est tempora at
-  eligendi, nemo, omnis quisquam veniam error suscipit libero pariatur voluptatem distinctio iure ipsum!</p>
+<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 <div class="social">
   <img src="" alt="instagram">
   <img src="" alt="linkedin">
@@ -19,14 +17,15 @@ export const experienceTemplateTags = () => {
   return `
  <div class="jobContainer">
    <img src="" alt="empresa">
-   <h3>empresa</h3>
-   <h4></h4>
+   <div>
+   <a href="">Empresa</a>
+   <h4>Puesto</h4>
+   </div>
    <ul>
      <li></li>
      <li></li>
      <li></li>
    </ul>
-   <a href="">Sitio oficial de</a>
  </div>
  `
 };
@@ -35,8 +34,8 @@ export const experienceTemplateTags = () => {
 export const projectsTemplateTags = (project) => {
   return `
 <div class="projectContainer">
-  <img src="" alt="${project.proyecto}">
-  <h3>${project.proyecto}</h3>
+  <img src="./hamburguesa.jpg" alt="${project.proyecto}">
+  <h1>${project.proyecto}</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque, officiis natus accusantium iste
     tenetur
     ad inventore numquam suscipit culpa. Temporibus, laudantium? Sapiente reprehenderit consequatur voluptate
