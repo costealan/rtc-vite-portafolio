@@ -13,8 +13,8 @@ const createProject = (proyecto, layout, img) => {
 }
 
 const listOfProjects = () => {
-  let project1 = createProject('Hamburguesas', 'projectContainer', './hamburguesa.jpg');
-  // let project2 = createProject('proyecto 2');
+  let project1 = createProject('Hamburguesas', 'layout1', './hamburguesa.jpg');
+  let project2 = createProject('proyecto 2', 'layout2', './pastel.jpg');
   // let project3 = createProject('proyecto 3');
   // let project4 = createProject('proyecto 4');
   // let project5 = createProject('proyecto 5');
