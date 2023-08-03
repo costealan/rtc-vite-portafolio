@@ -20,29 +20,33 @@ body{
   background-color: var(--backgroundBlack);
 }
 header{
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  height: 3%;
+  background-color: var(--backgroundBlack);
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 10px;
 }
 header > button{
   background-color: var(--backgroundBlack);
   border: none;
   color: var(--pinkLight);
   font-family: Futura-Book;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 152%;
+  font-size: 15px;
 }
 header > button:hover{
   cursor: pointer;
   color: var(--pinkHighlight);
 }
 .homePage{
+  margin-top: 20px;
   width: 97vw;
-  height: 100vh;
+  height: 97vh;
   border-radius: 30px;
-  background-color: yellow;
+  background-color: var(--almostWhite);
   margin-left: 1.5%;
   display: flex;
   flex-direction: column;
@@ -133,15 +137,17 @@ header > button:hover{
 .layout1{
   display: none;
   width: 97vw;
-  height: 100vh;
+  height: 97vh;
+  margin-top: 30px;
   border-radius: 30px;
-  background-color: var(--pinkLight);
+  background-color: var(--almostWhite);
   display: grid;
   grid-template-areas:"title title"
                       "image parragraph"
                       "image parragraph";
   align-content: center;
   margin-bottom: 20px;
+  margin-left: 1.5%;
 }
 .layout1 >h1 {
   margin-top: -20px;
@@ -164,6 +170,7 @@ header > button:hover{
   width: 550px;
   /* height: 701px; */
   flex-shrink: 0; 
+  margin-bottom: 30px;
 }
 .layout1 > p{
   margin-top: -50px;
@@ -184,6 +191,7 @@ header > button:hover{
   background-color: var(--almostWhite);
   border-radius: 30px;
   margin-top: 10px;
+  margin-left: 1.5%;
   display: grid;
   grid-template-areas: "title"
                        "parragraph"
@@ -217,10 +225,45 @@ header > button:hover{
 .layout2 >img:hover{
   cursor: pointer;
 }
-footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: auto;
-  color: var(--pinkLight);
+.layout3{
+  width: 97vw;
+  height: 100vh;
+  background-color: var(--almostWhite);
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-left: 1.5%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas: "img title"
+                        "img parragraph";
+}
+.layout3 >h1{
+  grid-area: title;
+  width: 662px;
+  height: 4px;
+  flex-shrink: 0;
+  color: var(--backgroundBlack);
+  font-family: Futura-Book;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 152%; /* 194.56px */
+}
+.layout3 >p{
+  grid-area: parragraph;
+  width: 622px;
+  height: 226px;
+  flex-shrink: 0;
+  color: var(--backgroundBlack);
+  font-family: Eb_Garamond;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134.5%; /* 53.8px */
+}
+.layout3 >img{
+  grid-area: img;
+  margin-left: 30px;
+  margin-top: 20px;
+  height: 95vh;
 }
