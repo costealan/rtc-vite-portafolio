@@ -28,21 +28,20 @@ header{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 10px;
 }
 header > button{
   background-color: var(--backgroundBlack);
   border: none;
   color: var(--pinkLight);
   font-family: Futura-Book;
-  font-size: 15px;
+  font-size: 20px;
 }
 header > button:hover{
   cursor: pointer;
   color: var(--pinkHighlight);
 }
 .homePage{
-  margin-top: 20px;
+  margin-top: 30px;
   width: 97vw;
   height: 97vh;
   border-radius: 30px;
@@ -79,7 +78,7 @@ header > button:hover{
   -webkit-text-fill-color: transparent;
             -webkit-background-clip: text; */
   font-family: Eb_Garamond;
-  font-size: 28px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 400;
   margin-top: -80px;
@@ -87,16 +86,19 @@ header > button:hover{
 .experience{
   width: 100vw;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  
+  margin-top: 30px;
 }
 .jobContainer{
-  width: 700px;
+  width: 90vw;
   border-bottom: 1px solid var(--pinkHighlight);
   display: flex;
-  margin-bottom: 10px;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 .jobContainer > img{
   width: 100px;
@@ -158,7 +160,7 @@ header > button:hover{
   flex-shrink: 0;
   color: var(--backgroundBlack);
   font-family: Futura-Book;
-  font-size: 120px;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 500;
   line-height: 152%; /* 194.56px */
@@ -167,7 +169,7 @@ header > button:hover{
   margin-top: -100px;
   margin-left: 20px;
   grid-area: image;
-  width: 550px;
+  width: 40vw;
   /* height: 701px; */
   flex-shrink: 0; 
   margin-bottom: 30px;
@@ -180,7 +182,7 @@ header > button:hover{
   flex-shrink: 0;
   color: var(--backgroundBlack);
   font-family: Eb_Garamond;
-  font-size: 38px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: 167%; /* 66.8px */
@@ -203,24 +205,24 @@ header > button:hover{
   margin-top: -20px;
   color: var(--backgroundBlack);
   font-family: Futura-Book;
-  font-size: 100px;
+  font-size: 7vw;
   grid-area: title;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .layout2 > p{
-  display: none;
   margin-top: -50px;
   width: 953px;
   color: var(--backgroundBlack);
   font-family: Eb_Garamond;
-  font-size: 30px;
+  font-size: 1.5vw;
   grid-area: parragraph;
 }
 .layout2 >img{
-  width: 953px;
-  height: 516px;
+  width: 45vw;
   grid-area: image;
+  margin-left: 20%;
 }
 .layout2 >img:hover{
   cursor: pointer;
@@ -244,7 +246,7 @@ header > button:hover{
   flex-shrink: 0;
   color: var(--backgroundBlack);
   font-family: Futura-Book;
-  font-size: 128px;
+  font-size: 9vw;
   font-style: normal;
   font-weight: 500;
   line-height: 152%; /* 194.56px */
@@ -256,7 +258,7 @@ header > button:hover{
   flex-shrink: 0;
   color: var(--backgroundBlack);
   font-family: Eb_Garamond;
-  font-size: 40px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: 134.5%; /* 53.8px */
@@ -266,4 +268,62 @@ header > button:hover{
   margin-left: 30px;
   margin-top: 20px;
   height: 95vh;
+}
+@media (max-width:800px){
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+  .homePage{
+    margin-top: 30px;
+  }
+  .homePage > p{
+    width: 70vw;
+    font-size: 2.5vw;
+  }
+  .layout1,
+  .layout2,
+  .layout3{
+    display: grid;
+    grid-template-areas: "title"
+                        "img";
+  }
+  .layout1 >h1,
+  .layout2 >h1,
+  .layout3 >h1,{
+    grid-area: title;
+    margin:0 ;
+  }
+  .layout1 > p,
+  .layout2 > p,
+  .layout3 > p{
+    display: none;
+  }
+  .layout1 > h1{
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .layout1 > img{
+    grid-area: img;
+    width: 90vw;
+    margin: 0;
+    margin-left: 4%;
+    margin-bottom: 50px;
+  }
+  .layout2 >img{
+    grid-area: img;
+    width: 97vw;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .layout3 >h1{
+    margin: 0;
+    margin-left: 30%;
+  }
+  .layout3 >img{
+    margin-top: 7%;
+    height: 85vh;
+    grid-area: img;
+    margin-left: 15%;
+  }
 }
