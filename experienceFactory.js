@@ -1,7 +1,8 @@
 //let newExperience = experience(img, empresa, fechas, responsabilidad1, responsabilidad2, responsabilidad3, link)
+import { renderExperienceTags } from "./renderTags";
 export const experiences = [];
 
-const createExperience = (img, empresa, fechas, responsabilidad1, responsabilidad2, responsabilidad3, link) => {
+const createExperience = (img, empresa, fechas, responsabilidad1, responsabilidad2, responsabilidad3) => {
   let experience = {
     img: img,
     empresa: empresa,
@@ -9,16 +10,15 @@ const createExperience = (img, empresa, fechas, responsabilidad1, responsabilida
     responsabilidad1: responsabilidad1,
     responsabilidad2: responsabilidad2,
     responsabilidad3: responsabilidad3,
-    link: link,
   }
   experiences.push(experience)
 }
 
 const listOfExperiences = () => {
-  let experience1 = createExperience();
-  let experience2 = createExperience();
-  let experience3 = createExperience();
-  let experience4 = createExperience();
-  let experience5 = createExperience();
+  let experience1 = createExperience("./assets/logo1.jpg", "X", "2018-2019", "Ventas", "", "");
+  let experience2 = createExperience("./assets/logo2.jpg", "fotografía gastronómica", "2020-2021", "Fotografo de producto", "Cocinar y food stylist", "prop stylist");
+  let experience3 = createExperience("./assets/logo3.jpg", "Pasta artesanal", "2021-2022", "Desarrollo de recetas", "Preparación de la pasta", "Marketing");
+  let experience4 = createExperience("./assets/logo4.jpg", "AC social media", "2021-2022", "Planeación de contenido", "Creación de contenido audiovisual", "");
+  let experience5 = createExperience("./assets/logo5.jpg", "Y", "2018-2019", "Fotografía de arquitectura", "", "");
 }
 listOfExperiences()

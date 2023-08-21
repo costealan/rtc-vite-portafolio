@@ -2,29 +2,30 @@ import { projects } from "./projectsFactory";
 
 export const homeTemplateTags = () => {
   return `
-<img src="" alt="foto mia">
+<img src="./assets/leon-cuadrada.jpg" alt="foto mia">
 <h2>Alan Coste</h2>
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<p>¡Hola! Soy un entusiasta aprendiz de programación y amante de la fotografía y la música. Aquí, en esta plataforma, canalizo mi creatividad con la ayuda de la inteligencia artificial para crear cautivadores mockups. Exploro la intersección entre el arte digital y la tecnología, mientras sigo mi pasión por el código, la expresión visual y la innovación</p>
 <div class="social">
-  <img src="" alt="instagram">
-  <img src="" alt="linkedin">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346 " alt="instagram">
+  <img src="https://assets.stickpng.com/images/6297a2f1e01809629f113598.png" alt="linkedin">
 </div>
 `
 };
 
 // const createExperience = (img, empresa, fechas, responsabilidad1, responsabilidad2, responsabilidad3, link)
-export const experienceTemplateTags = () => {
+export const experienceTemplateTags = (experience) => {
+  console.log(experience)
   return `
  <div class="jobContainer">
-   <img src="" alt="empresa">
+   <img src="${experience.img}" alt="${experience.empresa}">
    <div>
-   <a href="">Empresa</a>
-   <h4>Puesto</h4>
+   <a href="">${experience.empresa}</a>
+   <h4>${experience.fechas}</h4>
    </div>
    <ul>
-     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>${experience.responsabilidad1}</li>
+     <li>${experience.responsabilidad2}</li>
+     <li>${experience.responsabilidad3}</li>
    </ul>
  </div>
  `
@@ -34,13 +35,9 @@ export const experienceTemplateTags = () => {
 export const projectsTemplateTags = (project) => {
   return `
 <div class="${project.layout}">
-  <img src="${project.img}" alt="${project.proyecto}">
+ <img src="${project.img}" alt="${project.proyecto}">
   <h1>${project.proyecto}</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque, officiis natus accusantium iste
-    tenetur
-    ad inventore numquam suscipit culpa. Temporibus, laudantium? Sapiente reprehenderit consequatur voluptate
-    similique acc
-    usantium veniam perspiciatis.</p>
+  <p>${project.text}</p>
 </div>
 `
 }

@@ -25,7 +25,7 @@ export const renderExperienceTags = () => {
   contentContainer.classList.remove('projects');
   contentContainer.classList.add('experience');
   experiences.forEach(experience => {
-    let experienceTags = experienceTemplateTags();
+    let experienceTags = experienceTemplateTags(experience);
     contentContainer.innerHTML += experienceTags;
   })
 }
