@@ -2,12 +2,12 @@ import { projects } from "./projectsFactory";
 
 export const homeTemplateTags = () => {
   return `
-<img src="./assets/leon-cuadrada.jpg" alt="foto mia">
+<img src="./public/leon-cuadrada.jpg" alt="foto mia">
 <h2>Alan Coste</h2>
 <p>¡Hola! Soy un entusiasta aprendiz de programación y amante de la fotografía y la música. Aquí, en esta plataforma, canalizo mi creatividad con la ayuda de la inteligencia artificial para crear cautivadores mockups. Exploro la intersección entre el arte digital y la tecnología, mientras sigo mi pasión por el código, la expresión visual y la innovación</p>
 <div class="social">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346 " alt="instagram">
-  <img src="https://assets.stickpng.com/images/6297a2f1e01809629f113598.png" alt="linkedin">
+  <img src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="linkedin">
 </div>
 `
 };
