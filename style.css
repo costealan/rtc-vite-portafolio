@@ -101,13 +101,14 @@ header > button:hover{
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .jobContainer{
   width: 90vw;
   border-bottom: 1px solid var(--pinkHighlight);
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 30px;
 }
 .jobContainer > img{
@@ -116,11 +117,14 @@ header > button:hover{
   margin-right: 100px;
   background-color: var(--neutralGrey);
   border-radius: 100px;
+  align-self: center;
 }
 .jobContainer > div{
+  align-self: center;
   width: 100px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .jobContainer h4{
   color: var(--pinkLight);
@@ -138,6 +142,7 @@ header > button:hover{
   color: var(--pinkHighlight);
 }
 .jobContainer > ul{
+  width: 200px;
   font-family: Eb_Garamond;
   font-size: 15px;
   list-style: none;
