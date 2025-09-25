@@ -1,11 +1,13 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../../../../Desktop/Montserrat"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../../Desktop/Montserrat"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "rtc-vite-portafolio"
+  }
 }
